@@ -1,0 +1,32 @@
+<launch>
+  <rosparam file="$(find ajit_2)/config/group_joint.yaml" command="load"/>
+  <param name="robot_description"
+      textfile="$(find ajit_2)/urdf/ajit_2.urdf"/>
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model"
+      args="-param robot_description -urdf -model ajit_2" />
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+      output="screen" ns="/ajit_2" args="
+        joint_state_controller
+        robot_position_controller
+        "/>
+        <!--
+        right_hand_position_controller
+        left_hand_position_controller
+        neck_position_controller
+        head_position_controller
+
+        left_shoulder_joint_position_controller
+        left_shoulder_position_controller
+        left_upper_arm_position_controller
+        left_lower_arm_position_controller
+        right_shoulder_joint_position_controller
+        right_shoulder_position_controller
+        right_upper_arm_position_controller
+        right_lower_arm_position_controller
+        rear_right_wheel_position_controller
+        rear_right_wheel_position_controller
+        front_right_wheel_position_controller
+        front_left_wheel_position_controller
+        rear_left_wheel_position_controller
+        "/> -->
+</launch>

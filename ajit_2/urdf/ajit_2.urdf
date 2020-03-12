@@ -1,0 +1,1077 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com)
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="ajit_2">
+  <link
+    name="torso_with_base">
+    <inertial>
+      <origin
+        xyz="0.00108284784166282 0.00354020612854853 0.161961597641992"
+        rpy="0 0 0" />
+      <mass
+        value="6.09034487721949" />
+      <inertia
+        ixx="0.0311117225047476"
+        ixy="1.34114408391613E-06"
+        ixz="4.50213706282103E-08"
+        iyy="0.0233704735774127"
+        iyz="6.12804905599851E-06"
+        izz="0.045740183988236" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ajit_2/meshes/torso_with_base.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ajit_2/meshes/torso_with_base.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="rear_right_wheel">
+    <inertial>
+      <origin
+        xyz="0.001143679825796 -0.000172693112231372 -0.020243699800859"
+        rpy="0 0 0" />
+      <mass
+        value="0.207966248762552" />
+      <inertia
+        ixx="4.9547221955099E-05"
+        ixy="6.15265107138912E-10"
+        ixz="-1.53778223115391E-20"
+        iyy="4.95574096353451E-05"
+        iyz="8.37649774801772E-20"
+        izz="9.25765008771463E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ajit_2/meshes/rear_right_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ajit_2/meshes/rear_right_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rear_right_wheel"
+    type="continuous">
+    <origin
+      xyz="0.096 0.125 0.053"
+      rpy="1.5708 0.86888 -1.5708" />
+    <parent
+      link="torso_with_base" />
+    <child
+      link="rear_right_wheel" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="front_right_wheel">
+    <inertial>
+      <origin
+        xyz="0.0011436798258164 -0.000172693112257108 -0.0202436998007355"
+        rpy="0 0 0" />
+      <mass
+        value="0.207966248762552" />
+      <inertia
+        ixx="4.95472219550989E-05"
+        ixy="6.15265107127054E-10"
+        ixz="-1.99369922450585E-20"
+        iyy="4.9557409635345E-05"
+        iyz="5.26736987563944E-20"
+        izz="9.25765008771462E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ajit_2/meshes/front_right_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ajit_2/meshes/front_right_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_right_wheel"
+    type="continuous">
+    <origin
+      xyz="0.096 -0.125 0.053"
+      rpy="1.5708 -0.94871 -1.5708" />
+    <parent
+      link="torso_with_base" />
+    <child
+      link="front_right_wheel" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="front_left_wheel">
+    <inertial>
+      <origin
+        xyz="0.00114367982587759 -0.000172693112185762 -0.020243699800731"
+        rpy="0 0 0" />
+      <mass
+        value="0.207966248762552" />
+      <inertia
+        ixx="4.9547221955099E-05"
+        ixy="6.15265107143571E-10"
+        ixz="-3.85100515835727E-20"
+        iyy="4.95574096353451E-05"
+        iyz="3.15860975115351E-20"
+        izz="9.25765008771463E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ajit_2/meshes/front_left_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ajit_2/meshes/front_left_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_left_wheel"
+    type="continuous">
+    <origin
+      xyz="-0.096 -0.125 0.053"
+      rpy="1.5708 -1.4317 1.5708" />
+    <parent
+      link="torso_with_base" />
+    <child
+      link="front_left_wheel" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="rear_left_wheel">
+    <inertial>
+      <origin
+        xyz="0.00114367982587757 -0.000172693112185839 -0.0202436998007312"
+        rpy="0 0 0" />
+      <mass
+        value="0.207966248762552" />
+      <inertia
+        ixx="4.9547221955099E-05"
+        ixy="6.15265107152465E-10"
+        ixz="-1.70255915406408E-20"
+        iyy="4.95574096353451E-05"
+        iyz="8.3639945478462E-20"
+        izz="9.25765008771463E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ajit_2/meshes/rear_left_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ajit_2/meshes/rear_left_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rear_left_wheel"
+    type="continuous">
+    <origin
+      xyz="-0.096 0.125 0.053"
+      rpy="-1.5708 0.65905 -1.5708" />
+    <parent
+      link="torso_with_base" />
+    <child
+      link="rear_left_wheel" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="neck">
+    <inertial>
+      <origin
+        xyz="-0.000474529164049275 0.0253734807135814 -5.83476752827952E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0554686870532122" />
+      <inertia
+        ixx="1.14400758927377E-05"
+        ixy="2.03624999523414E-08"
+        ixz="-4.98085641671817E-08"
+        iyy="1.01925600115723E-05"
+        iyz="9.13023300857169E-09"
+        izz="1.45873483934887E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ajit_2/meshes/neck.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ajit_2/meshes/neck.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="neck"
+    type="continuous">
+    <origin
+      xyz="0.00050777 -0.020966 0.83778"
+      rpy="1.5708 0.00019861 0.07342" />
+    <parent
+      link="torso_with_base" />
+    <child
+      link="neck" />
+    <axis
+      xyz="5.223E-05 -1 0.0020047" />
+  </joint>
+  <link
+    name="head">
+    <inertial>
+      <origin
+        xyz="0.000531720839375085 0.0676698231429836 0.0022355182505913"
+        rpy="0 0 0" />
+      <mass
+        value="0.279948972455118" />
+      <inertia
+        ixx="0.000268465899949766"
+        ixy="-2.50978769356943E-06"
+        ixz="-8.51304073909741E-07"
+        iyy="0.000569785608013155"
+        iyz="8.09060094401545E-05"
+        izz="0.000611480471899482" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ajit_2/meshes/head.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ajit_2/meshes/head.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="head"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0.073603 -3.6641E-05 0.0011629" />
+    <parent
+      link="neck" />
+    <child
+      link="head" />
+    <axis
+      xyz="0.99988 8.3755E-05 0.015807" />
+  </joint>
+  <link
+    name="left_shoulder_joint">
+    <inertial>
+      <origin
+        xyz="5.89805981832114E-17 -0.00980756234729827 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0197456142642722" />
+      <inertia
+        ixx="3.01374083482572E-06"
+        ixy="7.54758364984596E-21"
+        ixz="3.67268191973544E-21"
+        iyy="7.41578906605364E-06"
+        iyz="-2.17718137750505E-21"
+        izz="7.68967212426087E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ajit_2/meshes/left_shoulder_joint.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ajit_2/meshes/left_shoulder_joint.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_shoulder_joint"
+    type="continuous">
+    <origin
+      xyz="0.13001 -0.027088 0.77878"
+      rpy="0 -0.020253 1.5709" />
+    <parent
+      link="torso_with_base" />
+    <child
+      link="left_shoulder_joint" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="left_shoulder">
+    <inertial>
+      <origin
+        xyz="-0.0290397888125244 -0.0139965238802988 0.000273200540650258"
+        rpy="0 0 0" />
+      <mass
+        value="0.0545537265363548" />
+      <inertia
+        ixx="1.4435292987549E-05"
+        ixy="-3.06680072978822E-07"
+        ixz="-8.13515537359147E-08"
+        iyy="1.0267269626089E-05"
+        iyz="3.41404620185189E-08"
+        izz="1.12411417057138E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ajit_2/meshes/left_shoulder.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ajit_2/meshes/left_shoulder.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_shoulder"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5745 -0.14099 1.5445" />
+    <parent
+      link="left_shoulder_joint" />
+    <child
+      link="left_shoulder" />
+    <axis
+      xyz="0.026043 0 0.99966" />
+  </joint>
+  <link
+    name="left_upper_arm">
+    <inertial>
+      <origin
+        xyz="0.030145339604696 -0.0911283429827465 -0.0128896304663745"
+        rpy="0 0 0" />
+      <mass
+        value="0.122044806180425" />
+      <inertia
+        ixx="3.91919011398007E-05"
+        ixy="4.55626129193026E-07"
+        ixz="-3.10811320045194E-07"
+        iyy="3.89143477397343E-05"
+        iyz="2.81736715157909E-06"
+        izz="3.80521417753794E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ajit_2/meshes/left_upper_arm.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ajit_2/meshes/left_upper_arm.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_upper_arm"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="-3.131 0.22013 3.1134" />
+    <parent
+      link="left_shoulder" />
+    <child
+      link="left_upper_arm" />
+    <axis
+      xyz="0.043429 -0.99906 -0.0011314" />
+  </joint>
+  <link
+    name="left_lower_arm">
+    <inertial>
+      <origin
+        xyz="-0.0258406908657342 -0.04223907403708 -0.00234479998268169"
+        rpy="0 0 0" />
+      <mass
+        value="0.103756189377196" />
+      <inertia
+        ixx="2.67457783544487E-05"
+        ixy="5.60044040637988E-08"
+        ixz="9.07354442813112E-09"
+        iyy="2.1294635376876E-05"
+        iyz="-2.69255599199436E-08"
+        izz="2.67276388960925E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ajit_2/meshes/left_lower_arm.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ajit_2/meshes/left_lower_arm.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_lower_arm"
+    type="continuous">
+    <origin
+      xyz="0.0078671 -0.17993 8.7293E-05"
+      rpy="-3.0684 -0.28741 -3.0642" />
+    <parent
+      link="left_upper_arm" />
+    <child
+      link="left_lower_arm" />
+    <axis
+      xyz="0.9907 0.04292 0.12912" />
+  </joint>
+  <link
+    name="left_hand">
+    <inertial>
+      <origin
+        xyz="0.00577388838029674 -0.0430508603552061 0.000749746012168997"
+        rpy="0 0 0" />
+      <mass
+        value="0.0468313871755756" />
+      <inertia
+        ixx="2.40657096887482E-05"
+        ixy="1.59437420920692E-06"
+        ixz="2.14678470719642E-06"
+        iyy="1.44249123853662E-05"
+        iyz="1.14626895456253E-06"
+        izz="1.63260616228612E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ajit_2/meshes/left_hand.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ajit_2/meshes/left_hand.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_hand"
+    type="continuous">
+    <origin
+      xyz="-0.024156 -0.083279 -0.0008768"
+      rpy="0.025587 -0.00094256 -0.067983" />
+    <parent
+      link="left_lower_arm" />
+    <child
+      link="left_hand" />
+    <axis
+      xyz="0.13098 -0.043811 -0.99042" />
+  </joint>
+  <link
+    name="right_shoulder_joint">
+    <inertial>
+      <origin
+        xyz="-0.0109553595775277 -1.11022302462516E-16 0.000285404652196813"
+        rpy="0 0 0" />
+      <mass
+        value="0.0197456142642723" />
+      <inertia
+        ixx="7.41280348428632E-06"
+        ixy="-1.42688655665397E-23"
+        ixz="-1.14602623179672E-07"
+        iyy="7.68967212426088E-06"
+        iyz="7.6232965252887E-21"
+        izz="3.01672641659308E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ajit_2/meshes/right_shoulder_joint.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ajit_2/meshes/right_shoulder_joint.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_shoulder_joint"
+    type="continuous">
+    <origin
+      xyz="-0.12785 -0.027088 0.77878"
+      rpy="1.5286 -0.0010986 -0.026154" />
+    <parent
+      link="torso_with_base" />
+    <child
+      link="right_shoulder_joint" />
+    <axis
+      xyz="0.99966 0 -0.026043" />
+  </joint>
+  <link
+    name="right_shoulder">
+    <inertial>
+      <origin
+        xyz="-0.0221624918571401 -0.0174265924107773 9.40364114096898E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0545537294198839" />
+      <inertia
+        ixx="1.44352933311808E-05"
+        ixy="-3.06680132947808E-07"
+        ixz="-8.13515631816331E-08"
+        iyy="1.02672697436159E-05"
+        iyz="3.41403487540323E-08"
+        izz="1.12411420499378E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ajit_2/meshes/right_shoulder.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ajit_2/meshes/right_shoulder.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_shoulder"
+    type="continuous">
+    <origin
+      xyz="-0.049983 0 0.0013021"
+      rpy="-3.141 0 3.1173" />
+    <parent
+      link="right_shoulder_joint" />
+    <child
+      link="right_shoulder" />
+    <axis
+      xyz="0.026043 0 0.99966" />
+  </joint>
+  <link
+    name="right_upper_arm">
+    <inertial>
+      <origin
+        xyz="0.0236377470370784 -0.09433498259828 -0.00999909368294818"
+        rpy="0 0 0" />
+      <mass
+        value="0.122044804954538" />
+      <inertia
+        ixx="3.91919029135849E-05"
+        ixy="4.55617665954089E-07"
+        ixz="-3.10807130327579E-07"
+        iyy="3.89143465096803E-05"
+        iyz="2.81736833810396E-06"
+        izz="3.80521422584862E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ajit_2/meshes/right_upper_arm.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ajit_2/meshes/right_upper_arm.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_upper_arm"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="-3.1336 0.16315 3.1128" />
+    <parent
+      link="right_shoulder" />
+    <child
+      link="right_upper_arm" />
+    <axis
+      xyz="0.043429 -0.99906 -0.0011314" />
+  </joint>
+  <link
+    name="right_lower_arm">
+    <inertial>
+      <origin
+        xyz="0.0223372746251115 -0.0401518804069877 0.00393416857049689"
+        rpy="0 0 0" />
+      <mass
+        value="0.103756180077498" />
+      <inertia
+        ixx="2.67457767952851E-05"
+        ixy="5.60047204760134E-08"
+        ixz="9.07265128712855E-09"
+        iyy="2.12946327837809E-05"
+        iyz="-2.69253292183373E-08"
+        izz="2.67276360980012E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ajit_2/meshes/right_lower_arm.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ajit_2/meshes/right_lower_arm.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_lower_arm"
+    type="continuous">
+    <origin
+      xyz="0.00827675416176607 -0.18283513188171 0.00189631264114903"
+      rpy="0.0287987216754847 0.28584203017497 0.00394998678496914" />
+    <parent
+      link="right_upper_arm" />
+    <child
+      link="right_lower_arm" />
+    <axis
+      xyz="0.990700153693471 0.0429197675219366 0.129116610192475" />
+  </joint>
+  <link
+    name="right_hand">
+    <inertial>
+      <origin
+        xyz="0.00535474626718152 -0.0429108956773968 0.00391878753012394"
+        rpy="0 0 0" />
+      <mass
+        value="0.0468321402456518" />
+      <inertia
+        ixx="2.46614235826484E-05"
+        ixy="1.71965786038955E-06"
+        ixz="-7.58448839611847E-08"
+        iyy="1.42746877988596E-05"
+        iyz="-5.63913627899617E-07"
+        izz="1.5880866166307E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ajit_2/meshes/right_hand.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ajit_2/meshes/right_hand.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_hand"
+    type="continuous">
+    <origin
+      xyz="0.0240218455641587 -0.0811916209918689 0.00540216659320664"
+      rpy="0.0180865510053456 0.000324336074754358 -0.0113724172010815" />
+    <parent
+      link="right_lower_arm" />
+    <child
+      link="right_hand" />
+    <axis
+      xyz="0.130977699707526 -0.0438112514097571 -0.990416789250483" />
+  </joint>
+  <transmission name="rear_right_wheel">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rear_right_wheel">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor_rrw">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="front_right_wheel">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="front_right_wheel">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor_frw">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="front_left_wheel">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="front_left_wheel">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor_flw">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="rear_left_wheel">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rear_left_wheel">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor_rlw">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="right_shoulder_joint">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="right_shoulder_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="dxml_rsj">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="left_shoulder_joint">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="left_shoulder_joint">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="dxml_lsj">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="right_shoulder">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="right_shoulder">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="dxml_rs">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="left_shoulder">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="left_shoulder">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="dxml_ls">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="right_upper_arm">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="right_upper_arm">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="dxml_rua">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="left_upper_arm">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="left_upper_arm">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="dxml_lua">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="left_lower_arm">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="left_lower_arm">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="dxml_lla">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="right_lower_arm">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="right_lower_arm">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="dxml_rla">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="right_hand">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="right_hand">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="dxml_rh">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="left_hand">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="left_hand">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="dxml_lh">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="head">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="head">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="dxml_head">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="neck">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="neck">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="dxml_neck">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <gazebo>
+     <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+       <robotNamespace>/ajit_2</robotNamespace>
+       <legacyModeNS>true</legacyModeNS>
+     </plugin>
+  </gazebo>
+</robot>
